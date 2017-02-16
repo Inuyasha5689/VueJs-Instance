@@ -25,8 +25,11 @@ var vm1 = new Vue({
   }
 });
 
+vm1.newProp = 'New!';
+
 setTimeout(function() {
   vm1.title = 'Changed by Timer';
+  vm1.show();
 },3000);
 
 var vm2 = new Vue({
